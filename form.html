@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href= "CSS/style.css"
+</head>
+<body>
+    <div class="container">
+        <h1>Product Review</h1>
+        <form id="review-form" action="review.html" method="get">
+            <!-- Product Name -->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option disabled selected value="">Choose a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <label>Overall Rating</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+
+            <!-- Date of Installation -->
+            <label for="installation">Date of Installation</label>
+            <input type="date" id="installation" name="installation" required>
+
+            <!-- Useful Features -->
+            <label>Which features did you find useful in the product? (Check all that apply)</label>
+            <div>
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ease" name="features" value="ease">
+                <label for="ease">Ease of Use</label>
+            </div>
+            <div>
+                <input type="checkbox" id="performance" name="features" value="performance">
+                <label for="performance">Performance</label>
+            </div>
+            <div>
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
+            </div>
+
+            <!-- Written Review -->
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+
+            <!-- Your Name -->
+            <label for="name"> Israel Alohan (Optional)</label>
+            <input type="text" id="name" name="name">
+
+            <!-- Submit -->
+            <input type="submit" value="Post Review">
+        </form>
+    </div>
+
+    <footer>
+        <p>©2024 🌸 Israel Alohan 🌸 United state</p>
+        <p>Last Modification: 10/17/2024 12:31am</p>
+    </footer>
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
